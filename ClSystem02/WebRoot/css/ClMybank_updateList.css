@@ -1,0 +1,70 @@
+/* CSS Document */
+
+	*{
+		margin-top:0;
+		margin-left:0;
+	}
+	
+	.mainDiv{
+		width:800px;
+		height:600px;
+		margin:0 auto;
+	}
+	
+	.topDiv{
+		width:800px;
+		height:150px;
+		background-image:url(updatelist.png);
+	}
+
+	.caidan{
+		width:800px;
+		height:50px;
+		background-image:url(updateCaiDan.png);
+		margin-top:-18px;
+	}
+	
+	
+	.caidan ul li{
+		list-style:none;
+		margin-left:10px;
+		margin-top:10px;
+		font-size:28px;
+		font-family:"¿¬Ìå_GB2312";
+		float:left;
+	}
+	
+	.rightDiv{
+		width:200px;
+		height:140px;
+		background-image:url(updateForm.png);
+		float:right;
+	}
+	
+	.rightDiv input{
+		width:100px;
+	}
+	
+	.rightDiv form{
+		margin-left:15px;
+	}
+	
+	.leftDiv{
+		width:580px;
+		height:400px;
+		float:left;
+		
+	}
+	
+	.leftDiv ul li{
+		list-style:none;
+		width:180px;
+		float:left;
+	}
+	
+	.leftDiv ul li input{
+		cursor:pointer;
+	}
+	
+
+	

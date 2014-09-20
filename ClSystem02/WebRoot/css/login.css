@@ -1,0 +1,111 @@
+/* CSS Document */
+	*{
+		margin-top:0;
+		margin-left:0;
+	}
+
+	.mainDiv{
+		width:800px;
+		height:555px;
+		margin:0 auto;
+		background-image:url(E:/pictures/Climgs/mainhb2.png);
+	}
+	
+	.topDiv{
+		width:450px;
+		height:100px;
+		margin:0 auto;
+	}
+	
+	.userMessage{
+		width:150px;
+		height:120px;
+		float:left;
+		margin-top:15px;
+		margin-left:70px;
+		background-image:url(E:/pictures/Climgs/loginName.png);
+	}
+	
+	.userMessage span{
+		margin-top:50px;
+		margin-left:42px;
+		font-weight:bold;
+		font-family:"¿¬Ìå_GB2312";
+		font-size:22px;
+		color:#FF0000;
+		position:absolute;
+	}
+	
+	.clMessage{
+		width:500px;
+		height:270px;
+		float:right;
+		margin-top:15px;
+		margin-right:75px;
+		background-image:url(E:/pictures/Climgs/textareaimg.png);
+	}
+	
+	.clMessage textarea{
+		width:440px;
+		height:209px;
+		border:0px;
+		background:transparent;
+		margin-top:27px;
+		margin-left:27px;
+		font-size:24px;
+		color:#0000FF;
+		font-family:"¿¬Ìå_GB2312";
+
+		
+	}
+	
+	.xxxList{
+		width:150px;
+		height:270px;
+		float:left;
+		margin-top:20px;
+		margin-left:70px;
+	}
+	
+	.xxxList ul{
+		list-style:none;
+	}
+	
+	.xxxList ul li{
+		width:90px;
+		height:35px;
+		margin-left:20px;
+		margin-top:20px;
+		background-image:url(E:/pictures/Climgs/aButton.png);
+		background-repeat:no-repeat;
+		font-size:18px;
+	}
+	
+	.xxxList ul li a{
+		position:absolute;
+		margin-top:8px;
+		margin-left:8px;
+	} 
+	a{
+		text-decoration: none;
+	}
+	
+	a:link{
+		color:#FFFFFF;
+	}
+	
+	a:hover{
+		color:#00FF00;
+	}
+	a:visited {
+		color:#999999;
+	}
+	
+	.dl{
+		width:500px;
+		height:120px;
+		float:right;
+		margin-top:10px;
+		margin-right:75px;
+		background-image:url(E:/pictures/Climgs/clhuanbian.png);
+	}

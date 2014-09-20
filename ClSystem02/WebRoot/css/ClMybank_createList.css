@@ -1,0 +1,112 @@
+/* CSS Document */
+	
+	*{
+		margin-left:0;
+		margin-top:0;
+	}
+	
+	.mainDiv{
+		width:800px;
+		height:600px;
+		margin:0 auto;
+	}
+
+	.mainBti{
+		width:800px;
+		height:150px;
+		background-image:url(createLogo.png);
+	}
+	
+	.mainCdan{
+		width:800px;
+		height:50px;
+		background-image:url(updateCaiDan.png);
+		/*在jsp时候删去*/
+		margin-top:-16px;
+	}
+	
+	.mainCdan ul li{
+		margin-top:10px;
+		margin-left:10px;
+		float:left;
+		list-style:none;
+		font-size:24px;
+	}
+	
+	#createCl{
+		width:80px;
+		height:30px;
+		background-image:url(createButCl.png);
+		color:#FF0000;
+		font-size:16px;
+		border:0;
+	}
+	
+	.leftCon{
+		width:175px;
+		height:180px;
+		float:right;
+		background-image:url(createCon.png);
+	}
+	
+	.leftCon input{
+		width:120px;
+		height:60px;
+		margin-top:20px;
+		margin-left:30px;
+		color:#FFFFFF;
+		font-size:24px;
+		font-family:"楷体_GB2312";
+		background-image:url(createBut.png);
+		border:0;
+	}
+	
+	.leftCre{
+		width:175px;
+		height:105px;
+		float:left;
+		color:#FFFFFF;
+		position:absolute;
+		margin-top:60px;
+		margin-left:270px;
+		background-image:url(create.png);
+		display:none;
+	}
+	
+	.leftCre table{
+		margin-top:12px;
+		margin-left:10px;
+	}
+	
+	.creaText{
+		width:90px;
+	}
+	
+	.creaBut{
+		margin-left:20px;
+		margin-top:4px;
+	}
+	
+	.rightMes{
+		width:600px;
+		height:400px;
+		background-color:#CCCCCC;
+		float:left;
+	}
+	
+	.rightMes ul li{
+		float:left;
+		margin-top:5px;
+		margin-left:30px;
+		list-style:circle;
+	}
+	
+	.rightMes ul li span input{
+		width:40px;
+		border:1px #FF0000 solid;
+	}
+	
+	.checkVal{
+		display:none;
+	}
+	

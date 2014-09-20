@@ -1,0 +1,121 @@
+/* CSS Document */
+	*{
+		margin-top:0;
+		margin-left:0;
+	}
+
+	.mainDiv{
+		width:800px;
+		height:600px;
+		margin:0 auto;
+		background-image:url(looklistBg.png);
+	}
+	
+	.topBiaoTi{
+		width:800px;
+		height:150px;
+		background-image:url(listHead.png);
+	}
+	
+	.leftShiJian{
+		width:150px;
+		height:450px;
+		background-image:url(shijianKuang.png);
+		float:left;
+	}
+	
+	.inSJ{
+		width:50px;
+		height:350px;
+		margin-top:50px;
+		margin-left:50px;
+		font-size:50px;
+		font-family:"华文行楷";
+		color:#FF0000;
+		float:left;
+	}
+	
+	.bottomDiv{
+		width:800px;
+		height:50px;
+		margin:0 auto;
+		background-image:url(bottomDiv.png);
+	}
+	
+	.pageHead{
+		width:635px;
+		height:30px;
+		border:2px #000000 solid;
+		background-color:#FF0000;
+	
+	}
+	
+	.pageHead ul{
+		list-style:none;
+	}
+	
+	.pageHead ul li{
+		margin-left:10px;
+		margin-top:7px;
+		font-size:18px;
+		font-weight:bold;
+		float:left;
+	}
+
+	a{
+		text-decoration: none;
+		color:#0000FF;
+	}
+	
+	.userClMe{
+		width:640px;
+		height:380px;
+		
+	}
+	
+	.userClMe tr td{
+		border:2px #000000 solid;
+		background-color:#FF0000;
+	}
+	
+	.topTr td{	
+		height:30px;
+		width:80px;
+	}
+	
+	.bottomTr td{
+		font-weight:bold;
+		font-size:14px;
+		width:77px;
+		height:20px;
+	}
+	
+	.inTopTable{
+		width:58px;
+		height:180px;
+		float:right;
+		font-size:45px;
+		font-family:"华文行楷";
+		margin:0 auto;
+	}
+	
+	.fenPage{
+		width:634px;
+		height:32px;
+		background-color:#FF0000;
+		border:2px #000000 solid;
+	}
+	
+	.fenPage ul{
+		list-style:none;
+	}
+	
+	.fenPage ul li{
+		float:left;
+		margin-top:10px;
+		margin-left:5px;
+	}
+	
+	.fenPage ul input{
+		width:20px;
+	}

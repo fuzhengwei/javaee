@@ -1,0 +1,72 @@
+/* CSS Document */
+	.headName{
+		margin:0 auto;
+		height:150px;
+		background-image: url(E:/pictures/Climgs/彩礼管理系统.jpg);
+		width: 800px;
+		
+	}
+	
+	.imgLogin{
+		width: 250px;
+		height: 43px;
+		background-image: url(E:/pictures/Climgs/userlogin2.jpg);
+	}
+	
+	.imgAdd{
+		width:250px;
+		height: 43px;
+		background-image: url(E:/pictures/Climgs/useradd2.jpg);
+	}
+	
+	.loginAdd{
+		margin:0 auto;
+		width:600px;
+		height:400px;
+		background-image:url(E:/pictures/Climgs/labg.png);
+	}
+	
+	.lubiao{
+		width:100px;
+		height:120px;
+		margin:0 auto;
+		background-image:url(E:/pictures/Climgs/green.png);
+	}
+	
+	.login{
+		width:250px;
+		height:240px;
+		border:1px #CCCCCC solid;
+		float:left;
+		margin-top:20px;
+		margin-left:26px;
+	}
+	
+	.add{
+		width:250px;
+		height:240px;
+		border:1px #CCCCCC solid;
+		float:right;
+		margin-top:20px;
+		margin-right:26px;
+	}
+	
+	.userLogin{
+		width:150px;
+	}
+	
+	.userAdd{
+		width:150px;
+	}
+	
+	.userLogin{
+		display:block;
+	}
+	
+	.saySpan{
+		margin-left:170px;
+		margin-top:250px;
+		position:absolute;
+		color:#FF0000;
+		font-family:"楷体_GB2312";
+	}
