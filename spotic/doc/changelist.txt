@@ -1,0 +1,96 @@
+*********************
+软件必须获得权限后才可以使用
+*********************
+
+*********************
+国际化 2014年8月23日
+*********************
+新增：
+app_en_US.properties、app_zh_CN.properties
+
+引入：
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<fmt:setLocale value="en_US"/>
+
+使用：
+<fmt:message key="spotic_emp.emp_name"/>
+*********************
+
+*********************
+验证
+*********************
+标识
+<span style="color: red;margin-left: 5px;">*</span>
+
+定义：
+<script type="text/javascript">
+	function ismaxlength(obj){
+		var mlength=obj.getAttribute? parseInt(obj.getAttribute("maxlength")) : ""
+		if (obj.getAttribute && obj.value.length>mlength)
+		obj.value=obj.value.substring(0,mlength)
+	}
+</script>
+
+使用：
+<textarea onkeyup="return ismaxlength(this)" maxlength="20"></textarea>
+*********************
+验证模版
+*********************
+引入：
+<script type="text/javascript" language="javascript" src="res/scripts/lib/jquery.min.js"></script>
+<script type="text/javascript" src="res/EasyValidator3.0/EasyValidator/js/easy_validator.pack.js"></script>
+<link href="res/EasyValidator3.0/EasyValidator/css/validate.css" rel="stylesheet" type="text/css" />
+
+使用：
+参加res/EasyValidator3.0/EasyValidator/index.html
+*********************
+分页
+create by fuzhengwei
+2014-8-17
+*********************
+service
+
+PageBean pageBean = new PageBean();
+pageBean.setFirstResult(request.getParameter("page"));
+request.setAttribute("page", null == request.getParameter("page")?"1":request.getParameter("page"));
+
+jsp
+
+<tr>
+	<td colspan="8" align="right">
+		<c:if test="${page > 1}">
+			<a href="Spotic_EmpServlet?type=emplist&page=${ page <= 1?1:page-1 }"><fmt:message key="jsp.onpage"/></a>
+			|
+		</c:if>
+		<a href="Spotic_EmpServlet?type=emplist&page=${ page + 1 }"><fmt:message key="jsp.nextpage"/></a>
+	</td>
+</tr>
+*********************
+搜索
+*********************
+jsp
+
+<form action="Spotic_CustomerServlet?type=empselectserach" method="post">
+<!-- 查询 -->
+<table border="1" class="searchTable">
+	<tr>
+		<td>
+			
+		</td>
+		<td>
+			<input type="text" name="" maxlength="20" value="${  }"/>
+		</td>
+		<td>
+			<input type="submit" value="搜索" />
+			<input type="reset" value="重置" />
+		</td>
+	</tr>
+</table>
+</form>
+
+servlet
+
+else if("empselectserach".equals(type)){
+	Spotic_CustomerService.doSelectModelListBySerachForLike(request,response);
+}
+
