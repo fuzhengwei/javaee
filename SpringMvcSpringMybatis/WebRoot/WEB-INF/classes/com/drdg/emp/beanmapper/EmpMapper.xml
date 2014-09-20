@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.drdg.emp.dao.EmpDao" >
+	<resultMap id="BaseResultMap" type="com.drdg.emp.bean.EmpBean" >
+		<id column="emp_id" property="empId" jdbcType="INTEGER"/>
+		<id column="emp_name" property="empName" jdbcType="VARCHAR"/>
+		<id column="emp_age" property="empAge" jdbcType="VARCHAR"/>
+	</resultMap>
+	
+	<sql id="colum_list">
+		emp_id,emp_name,emp_age
+	</sql>
+	
+	<!-- 按照对象方式插入，emp_id字段为自增长，所以不需要uuid -->
+	<insert id="doInsertEmp" parameterType="com.drdg.emp.bean.EmpBean">
+		insert into icss_emp(emp_name,emp_age) 
+		values (
+		#{empName,jdbcType=VARCHAR},
+		#{empAge,jdbcType=VARCHAR}
+		)
+	</insert>
+	
+	<!-- 按照传递的特定对象插入 -->
+	<insert id="doInsertEmpSelective" parameterType="com.drdg.emp.bean.EmpBean" >
+		insert into icss_emp
+		<trim prefix="(" suffix=")" suffixOverrides="," >
+			<if test="empName != null" >
+		        emp_name,
+		    </if>
+			<if test="empAge != null" >
+		        emp_age,
+		    </if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides="," >
+			<if test="empName != null" >
+		        #{empName,jdbcType=VARCHAR},
+		    </if>
+			<if test="empAge != null" >
+				#{empAge,jdbcType=VARCHAR},
+		    </if>
+		</trim>
+	</insert>
+	
+	<!-- 根据指定id删除 -->
+	<delete id="doDeleteEmpById" parameterType="java.lang.Integer">
+		delete from icss_emp 
+		where emp_id = #{empId,jdbcType=VARCHAR}
+	</delete>
+	
+	<!-- 根据指定id查询，多用于修改操作的前置查询 -->
+	<select id="doGetEmpById" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+		select 
+		<include refid="colum_list"/> 
+		from icss_emp 
+		where emp_id = #{empId,jdbcType=INTEGER}
+	</select> 
+	
+	<!-- 查询所有信息 -->
+	<select id="doGetEmpList" resultMap="BaseResultMap">
+  		SELECT * FROM icss_emp 
+  	</select>
+</mapper>

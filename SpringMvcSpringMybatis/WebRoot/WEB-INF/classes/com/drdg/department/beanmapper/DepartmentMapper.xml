@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.drdg.department.dao.DepartmentDao" >
+	<resultMap id="BaseResultMap" type="com.drdg.department.bean.DepartmentBean" >
+		<id column="dt_id" property="dtId" jdbcType="INTEGER"/>
+		<id column="dt_no" property="dtNo" jdbcType="VARCHAR"/>
+		<id column="dt_name" property="dtName" jdbcType="VARCHAR"/>
+	</resultMap>
+	
+	<sql id="colum_list">
+		dt_id,dt_no,dt_name
+	</sql>
+	
+	<select id="doGetDepartmentList" resultMap="BaseResultMap">
+  		SELECT * FROM icss_department
+  	</select>
+</mapper>
